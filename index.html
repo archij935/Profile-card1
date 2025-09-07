@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title> 
+    <style>
+             body,html{ 
+                /* full body k lie */
+                     padding: 0%;
+                     margin: 0%;
+                     height: 100%;      
+             }
+             .cont{
+                /* andar box k lie */
+                height: 100%;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
+             .box{
+                     background-color: #333;
+                     text-align: center;
+                     padding: 100px 100px;
+                     border-radius: 20px;
+                     border: 5px solid gold;
+             }
+             
+             .box:hover{
+                transform: scale(1.05); 
+                cursor: pointer;
+             }
+             #profile{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                border: 2px solid gold;
+             }
+             button{
+                background-color: blue;
+                color: white;
+                height: 50px;
+                width: 150px;
+                border-radius: 20px;
+                border: 2px solid gold;
+             }
+             button:hover{
+                transform: scale(1.03);
+             }
+             h2{
+                color: white;
+                font-size: 20;
+             }
+             #l,#x,#g{
+                border-radius: 50%;
+                border: 2px solid gold;
+             }
+             #l:hover, #g:hover , #x:hover {
+                transform : scale(1.1);
+             }
+             .logo{
+                gap: 10;
+             }
+             .logo img{
+                height: 100px;
+                width: 100px;
+             }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            <h2>Archi Jain</h2>
+            <img src="../profile card/images/profile.png" alt="profile photo">
+            <button> View Portfolio</button>
+            <button>Major Projects</button>
+            <div class="logo">
+                <img src="../profile card/images/OIP.webp" alt="linkedin" id="l">
+                <img src="../profile card/images/twit.png" alt=" X img" id="x">
+                <img src="../profile card/images/git.png" alt="github img" id="g">
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
